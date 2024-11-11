@@ -203,7 +203,7 @@
                               <button type="button" class="btn btn-secondary" data-dismiss="modal">
                                 <i class="fas fa-times mr-1"></i>Batal
                               </button>
-                              <a href="index.php?page=delete_pelanggan&id_pelanggan=<?= $item['id_pelanggan'] ?>" class="btn btn-danger">
+                              <a href="index.php?page=delete_barang&id_barang=<?= $item['id_barang'] ?>" class="btn btn-danger">
                                 <i class="fas fa-trash-alt mr-1"></i>Hapus
                               </a>
                             </div>

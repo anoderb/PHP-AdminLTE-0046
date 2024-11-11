@@ -89,4 +89,5 @@ switch ($page) {
         $controller->index(); // Tampilkan home
         break;
 }
+ob_end_flush();
 ?>

@@ -4,7 +4,7 @@ include 'app/models/dashboardModels.php';
 
 class DashboardController {
     public function index() {
-        // Membuat instance model
+        
         $dashboardModel = new DashboardModel();
 
         // Mengambil data

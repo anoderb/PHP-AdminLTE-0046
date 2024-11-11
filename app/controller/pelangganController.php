@@ -53,26 +53,6 @@ class pelangganController {
     }
     
 
-    // public function edit($id_pelanggan) {
-        
-    //     $Pelanggan = $this->userModel->getpelangganById($id_pelanggan);
-    //     if (!$Pelanggan) {
-    //         echo "pelanggan tidak ditemukan.";
-    //         return;
-    //     }
-    
-       
-    //     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    //         $nama_pelanggan = $_POST['nama_pelanggan'];
-    //         $alamat = $_POST['alamat'];
-    //         $this->userModel->updatepelanggan($id_pelanggan, $nama_pelanggan, $alamat);
-    //         header('Location: index.php?page=pelanggan');
-    //         exit();
-    //     }
-    
-        
-    //     require_once 'app/views/edit_pelanggan.php';
-    // }
 
     public function edit($id_pelanggan) {
         $Pelanggan = $this->userModel->getpelangganById($id_pelanggan);
@@ -98,11 +78,6 @@ class pelangganController {
     }
     
 
-    // public function delete($id_pelanggan) {
-    //     $this->userModel->deletepelanggan($id_pelanggan);
-    //     header('Location: index.php?page=pelanggan');
-    //     exit();
-    // }
     public function delete($id_pelanggan) {
         try {
             $this->userModel->deletePelanggan($id_pelanggan);
